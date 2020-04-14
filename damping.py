@@ -6,9 +6,9 @@ H1=np.array([])
 H2 = np.array([])
 H3 =[]
 for i in t:
-    h2=(25*i*np.exp(-5*i))
-    h3 = (30/np.sqrt(35))*np.sin((np.sqrt(35)*i)/2)*np.exp(-5*i/2)
-    h1 =(35/(2*np.sqrt(46)))*(np.exp((-9+np.sqrt(46))*i)-np.exp((-9-np.sqrt(46))*i))
+    h2=(25*i*np.exp(-5*i))*u(i)
+    h3 = (30/np.sqrt(35))*u(i)*np.sin((np.sqrt(35)*i)/2)*np.exp(-5*i/2)
+    h1 =(35/(2*np.sqrt(46)))*u(i)*(np.exp((-9+np.sqrt(46))*i)-np.exp((-9-np.sqrt(46))*i))
     H1 =np.append(H1,[h1])
     H2 = np.append(H2,[h2])
     H3 = np.append(H3,[h3])
