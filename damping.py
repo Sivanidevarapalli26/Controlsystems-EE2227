@@ -1,6 +1,10 @@
 import numpy as np
 import matplotlib.pyplot as plt
-
+def u(n):
+    if(n>=0):
+        return 1
+    else:
+        return 0
 t=np.linspace(0,5,1000)
 H1=np.array([])
 H2 = np.array([])
